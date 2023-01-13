@@ -79,7 +79,6 @@ The augments in the ALVC test code (ALVC.py) include:
 --path, the path to PNG files;
 
 --l, lambda value. The pre-trained PSNR models are trained by 4 lambda values, i.e., 256, 512, 1024 and 2048, with increasing bit-rate/PSNR. 
-
 ```
 For example:
 ```
