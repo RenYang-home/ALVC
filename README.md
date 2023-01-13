@@ -70,3 +70,18 @@ We uploaded a prepared sequence *BasketballPass* here as a test demo, which cont
 - VTM ([Download link](https://vcgit.hhi.fraunhofer.de/jvet/VVCSoftware_VTM))
 
   (*In our PSNR model, we use VVC to compress I-frames. Please complite the VTM codec and put the folder "VVCSoftware_VTM" in the same directory as the codes.*)
+  
+### Test code
+
+The augments in the ALVC test code (ALVC.py) include:
+
+```
+--path, the path to PNG files;
+
+--l, lambda value. The pre-trained PSNR models are trained by 4 lambda values, i.e., 256, 512, 1024 and 2048, with increasing bit-rate/PSNR. 
+
+```
+For example:
+```
+python ALVC.py --path BasketballPass
+```
