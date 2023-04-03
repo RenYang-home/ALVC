@@ -69,7 +69,7 @@ We uploaded a prepared sequence *BasketballPass* here as a test demo, which cont
 
 - VTM ([Download link](https://vcgit.hhi.fraunhofer.de/jvet/VVCSoftware_VTM))
 
-  (*In our PSNR model, we use VVC to compress I-frames. Please complite the VTM codec and put the folder "VVCSoftware_VTM" in the same directory as the codes.*)
+  (*In our PSNR model, we use VVC to compress I-frames. Please compile VTM and put the folder "VVCSoftware_VTM" in the same directory as the codes.*)
   
 ### Test code
 
