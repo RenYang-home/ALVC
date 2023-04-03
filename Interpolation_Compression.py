@@ -137,11 +137,6 @@ for g in range(GOP_num):
         = sess.run([psnr_loss, bpp_loss, frame_t_com, flow_lat, res_lat],
                    feed_dict={data_tensor:input_data, inter_num:args.inter})
 
-    # with open(path_bin + '/f' + str(g * GOP_size + args.f_P + 2).zfill(3) + '.bin', "wb") as ff:
-    #     ff.write(np.array(len(string_MV), dtype=np.uint16).tobytes())
-    #     ff.write(string_MV)
-    #     ff.write(string_Res)
-
     F_t = np.clip(F_t, 0, 1)
     F_t = np.uint8(F_t * 255.0)
 
