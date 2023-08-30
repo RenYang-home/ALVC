@@ -63,7 +63,7 @@ We uploaded a prepared sequence *BasketballPass* here as a test demo, which cont
 
   (*Since we use misc.imread, do not use higher versions in which misc.imread is removed.*)
 
-- Pre-trained models ([Download link](https://data.vision.ee.ethz.ch/reyang/ALVC/model/model.zip))
+- Pre-trained models ([Download link](https://drive.google.com/file/d/1WJo_VkyG4qRRyGox_R1ip0l4LMcrIQur/view?usp=sharing))
 
   (*Download the folder "model" to the same directory as the codes.*)
 
