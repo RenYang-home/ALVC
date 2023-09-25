@@ -76,9 +76,10 @@ s_dec_1, s_dec_2 = state_decoder
 s_fea_1, s_fea_2 = state_feature
 
 saver = tf.train.Saver(max_to_keep=None)
-save_root = '/scratch_net/maja_second/'
-save_path = save_root + '/RLVC_VTM/lambda_' + str(args.l) + '_extra/'
+save_root = './model/Extrapolation'
+save_path = save_root + '/lambda_' + str(args.l) + '_extra/'
 # latest_model = tf.train.latest_checkpoint(checkpoint_dir=save_path)
+print("\033[31m" + save_path + "\033[0m")
 if os.path.exists(save_path + 'model.ckpt.index'):
     saver.restore(sess, save_path + 'model.ckpt')
 else:
