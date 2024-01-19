@@ -8,7 +8,7 @@ import CNN_recurrent
 import motion
 import functions
 import helper2
-import flow_vis
+# import flow_vis
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 

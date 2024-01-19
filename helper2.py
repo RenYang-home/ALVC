@@ -70,7 +70,7 @@ def encode_I(args, frame_index, I_level, path, path_com, path_bin):
     os.system('ffmpeg -i ' + path + 'f' + str(frame_index).zfill(3) + '.png '
               '-pix_fmt yuv444p ' + path + 'f' + str(frame_index).zfill(3) + '.yuv -y -loglevel error')
     os.system(
-        './VVCSoftware_VTM/bin/EncoderAppStatic -c ./VVCSoftware_VTM/encoder_intra_vtm.cfg '
+        './VVCSoftware_VTM/bin/EncoderAppStatic -c ./VVCSoftware_VTM/cfg/encoder_intra_vtm.cfg '
         '-i ' + path + 'f' + str(frame_index).zfill(3) + '.yuv -b ' + path_bin + 'f' + str(frame_index).zfill(3) + '.bin '
         '-o ' + path_com + 'f' + str(frame_index).zfill(3) +  '.yuv -f 1 -fr 2 -wdt ' + str(Width) + ' -hgt ' + str(Height) +
         ' -q ' + str(I_level) + ' --InputBitDepth=8 --OutputBitDepth=8 --OutputBitDepthC=8 --InputChromaFormat=444 > /dev/null')
